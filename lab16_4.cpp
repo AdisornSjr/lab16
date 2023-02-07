@@ -17,3 +17,14 @@ int main(){
 	
 	return 0;
 }
+
+#include <algorithm> 
+void shuffle(int &a,int &b,int &c,int &d){
+	int x[] = {a,b,c,d};
+	random_shuffle(x,x+4);
+	a = x[0];
+	b = x[1];
+	c = x[2];
+	d = x[3];
+
+}
